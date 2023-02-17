@@ -1,0 +1,30 @@
+* {
+    border: solid 1px black;
+    margin: 0px;
+}
+
+body {
+    background-color: azure;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.infoBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calcBox {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notesBox {
+    width: 500px;
+    height: 500px;
+}

@@ -42,7 +42,7 @@ body {
     align-items: center;
 }
 
-.pacDosageOutput {
+#pacDosageOutput {
     min-height: 50px;
 }
 
@@ -54,6 +54,6 @@ body {
     align-items: center;
 }
 
-.saDosageOutput {
+#saDosageOutput {
     min-height: 50px;
 }

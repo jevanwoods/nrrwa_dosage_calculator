@@ -28,3 +28,32 @@ body {
     width: 500px;
     height: 500px;
 }
+
+.resultsBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pacDosage {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pacDosageOutput {
+    min-height: 50px;
+}
+
+.saDosage {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saDosageOutput {
+    min-height: 50px;
+}

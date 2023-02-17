@@ -16,19 +16,33 @@
     <div class="infoBox">
         <div class="calcBox">
             <h2 class="calcTitle">Raw Water Parameters</h2>
+            <label for="rawNTU">Raw NTU:</label>
+            <input type="number" step=0.1 min=0 id="rawNTU" name="rawNTU">            
             <label for="rawpH">Raw pH:</label>
-            <input type="number" step=0.01 min=4 id="rawph" name="rawpH">
+            <input type="number" step=0.01 min=4 id="rawpH" name="rawpH">
             <label for="rawTemp">Raw Temp:</label>
             <input type="number" step=0.1 min=0 id="rawTemp" name="rawTemp">
             <label for="rawAlk">Raw Alkalinity:</label>
             <input type="number" min=0 id="rawAlk" name="rawAlk">
+            <button type="button" class="calcDosage" onclick="coagulantCalc()">Calculate Dosage</button>
         </div>
         <div class="notesBox">
 
         </div>
     </div>
     <div class="resultsBox">
+        <div class="pacDosage">
+            <h2 class="pacDosage">DelPAC Dosage</h2>
+            <div class="pacDosageOutput">
 
+            </div>
+        </div>
+        <div class="saDosage">
+            <h2 class="saDosage">Treatment Train Soda Ash Dosage</h2>
+            <div class="saDosageOutput">
+
+            </div>
+        </div>
     </div>
 </body>
 </html>

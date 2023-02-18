@@ -30,11 +30,36 @@ let baseTempFactor = 0;
 // Connect Output Boxes
 let pacDosageOutput = document.getElementById('pacDosageOutput');
 let saDosageOutput = document.getElementById('saDosageOutput');
+let turbidityNoteOutput = document.getElementById('turbidityNoteBox');
+let pHNoteOutput = document.getElementById('pHNoteBox');
 let tempNoteOutput = document.getElementById('tempNoteBox');
+let alkNoteOutput = document.getElementById('alkNoteBox');
 
 // -------------------------------------------------------------------------- //
 // -------------------------------Functions---------------------------------- //
 // -------------------------------------------------------------------------- //
+
+function turbidityNote() {
+    if (rawNTU <= 5) {
+        turbidityNoteOutput.innerHTML = "This turbidity is considered ideal."
+    } else if (rawNTU <= 10) {
+        turbidityNoteOutput.innerHTML = "This turbidity is considered very low."
+    } else if (rawNTU <= 25) {
+        turbidityNoteOutput.innerHTML = "This turbidity is considered low."
+    } else if (rawNTU <= 50) {
+        turbidityNoteOutput.innerHTML = "This turbidity is considered medium."
+    } else if (rawNTU <= 100) {
+        turbidityNoteOutput.innerHTML = "This turbidity is considered high."
+    } else if (rawNTU <= 300) {
+        turbidityNoteOutput.innerHTML = "This turbidity is considered very high."
+    } else {
+        turbidityNoteOutput.innerHTML = "Careful! This turbidity is untested with this calculator."
+    };
+};
+
+function pHNote() {
+
+};
 
 function temperatureNote() {
     if (rawTemp <= 5) {
@@ -46,7 +71,10 @@ function temperatureNote() {
     } else {
         tempNoteOutput.innerHTML = "This temperature is considered hot."
     }
-    console.log("connected");
+};
+
+function alkalinityNote() {
+
 };
 
 function coagulantCalc() {

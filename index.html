@@ -15,7 +15,7 @@
     </div>
     <div class="infoBox">
         <div class="calcBox">
-            <h2 class="calcTitle">Raw Water Parameters</h2>
+            <h2 class="headerTitle">Raw Water Parameters</h2>
             <div class="rawDiv">
                 <label for="rawNTU">Raw NTU:</label>
                 <input type="number" step=0.1 min=0 id="rawNTU" name="rawNTU">
@@ -35,6 +35,7 @@
             <button type="button" class="calcDoseBtn" onclick="coagulantCalc();turbidityNote();pHNote();temperatureNote();alkalinityNote();">Calculate Dosage</button>
         </div>
         <div class="outputDivs">
+            <h2 class="headerTitle">Notes:</h2>
             <div id="turbidityNoteBox" class="outputBox">
             </div>
             <div id="pHNoteBox" class="outputBox">

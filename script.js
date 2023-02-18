@@ -86,7 +86,17 @@ function temperatureNote() {
 };
 
 function alkalinityNote() {
-
+    if (rawAlk <= 12) {
+        alkNoteOutput.innerHTML = "This alkalinity is considered very low."
+    } else if (rawAlk <= 15) {
+        alkNoteOutput.innerHTML = "This alkalinity is considered low."
+    } else if (rawAlk <= 19) {
+        alkNoteOutput.innerHTML = "This alkalinity is considered slightly low."
+    } else if (rawAlk <= 22) {
+        alkNoteOutput.innerHTML = "This alkalinity is considered normal."
+    } else {
+        alkNoteOutput.innerHTML = "This alkalinity is considered high and is ideal."
+    };
 };
 
 function coagulantCalc() {

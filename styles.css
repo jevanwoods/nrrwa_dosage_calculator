@@ -18,14 +18,35 @@ body {
 }
 
 .calcBox {
-    width: 500px;
     height: 500px;
     display: flex;
     flex-direction: column;
 }
 
-.notesBox {
-    width: 500px;
+.calcTitle {
+    font-size: 30px;
+}
+
+.rawDiv {
+    margin-top: 1em;
+    font-size: 24px;
+    display: flex;
+    justify-content: right;
+}
+
+input {
+    height: 24px;
+}
+
+.calcDoseBtn {
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    margin-top: 30px;
+    align-self: center;
+}
+
+#tempNoteBox {
     height: 500px;
 }
 

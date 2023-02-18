@@ -24,15 +24,30 @@ let ntuT_500_5000 = 57.75;
 
 // Calculated Factors
 let coagulantFactor = 0;
-
 let ntuTempFactor = 0;
-
 let baseTempFactor = 0;
 
+// Connect Output Boxes
 let pacDosageOutput = document.getElementById('pacDosageOutput');
 let saDosageOutput = document.getElementById('saDosageOutput');
+let tempNoteOutput = document.getElementById('tempNoteBox');
 
-console.log("hello world");
+// -------------------------------------------------------------------------- //
+// -------------------------------Functions---------------------------------- //
+// -------------------------------------------------------------------------- //
+
+function temperatureNote() {
+    if (rawTemp <= 5) {
+        tempNoteOutput.innerHTML = "This temperature is considered cold."
+    } else if (rawTemp <= 10) {
+        tempNoteOutput.innerHTML = "This temperature is considered cool."
+    } else if (rawTemp <=20) {
+        tempNoteOutput.innerHTML = "This temperature is considered warm."
+    } else {
+        tempNoteOutput.innerHTML = "This temperature is considered hot."
+    }
+    console.log("connected");
+};
 
 function coagulantCalc() {
     rawNTU = document.getElementById('rawNTU').value;
@@ -66,10 +81,4 @@ function coagulantCalc() {
     pacDosageOutput.innerHTML = Math.round(resultPAC);
     let resultSA = +rawNTU * +rawpH * +rawTemp * +rawAlk;
     saDosageOutput.innerHTML = "Ignore This";
-}
-
-//coagulantFactor = (0.00000001 * rawNTU ** 2) - (0.00022 * rawNTU) + .275;
-
-//baseTempFactor = (0.000015 * rawNTU ** 2) + (0.06 * rawNTU) + 19;
-
-//
+};

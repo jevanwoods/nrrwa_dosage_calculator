@@ -46,10 +46,6 @@ input {
     align-self: center;
 }
 
-#tempNoteBox {
-    height: 500px;
-}
-
 .resultsBox {
     display: flex;
     justify-content: space-around;
@@ -61,6 +57,10 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.outputBox {
+    font-size: 24px;
 }
 
 #pacDosageOutput {

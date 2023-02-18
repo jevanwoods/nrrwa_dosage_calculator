@@ -58,7 +58,19 @@ function turbidityNote() {
 };
 
 function pHNote() {
-
+    if (rawpH <= 7 && rawpH > 6.7) {
+        pHNoteOutput.innerHTML = "This pH is considered very low."
+    } else if (rawpH <= 7.2) {
+        pHNoteOutput.innerHTML = "This pH is considered low."
+    } else if (rawpH <= 7.5) {
+        pHNoteOutput.innerHTML = "This pH is considered ideal."
+    } else if (rawpH <= 7.9) {
+        pHNoteOutput.innerHTML = "This pH is considered high."
+    } else if (rawpH <= 8.3) {
+        pHNoteOutput.innerHTML = "This pH is considered very high."
+    } else {
+        pHNoteOutput.innerHTML = "This pH is out of normal range. Check to make sure it is properly entered."
+    }
 };
 
 function temperatureNote() {

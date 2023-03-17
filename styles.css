@@ -26,15 +26,19 @@ body {
 }
 
 .infoBox {
-    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
     justify-content: space-around;
     padding-top: 50px;
 }
 
 .calcBox {
     height: 500px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 
 .headerTitle {
@@ -44,8 +48,9 @@ body {
 .rawDiv {
     margin-top: 1em;
     font-size: 24px;
-    display: flex;
-    justify-content: right;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
 }
 
 input {
